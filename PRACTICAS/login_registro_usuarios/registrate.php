@@ -11,7 +11,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $password = $_POST["password"];
     $password2 = $_POST["password2"];
 
-    echo "$usuario $password $password2";
+    // echo "$usuario $password $password2";
 }
 
 
