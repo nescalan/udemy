@@ -43,6 +43,8 @@
 					</ul>
 				</div>
 			<?php endif; ?>
+
+
 		</form>
 
 		<p class="texto-registrate">
