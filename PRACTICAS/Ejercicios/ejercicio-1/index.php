@@ -13,7 +13,7 @@ if (isset($_POST["submit"])) {
     }
 
     if ($_POST["farenheit"] != "") {
-        $resultCelsius = (-17.22 * 9 / 5) + 32;
+        $resultCelsius = ($farenheit * 9 / 5) + 32;
     }
 }
 

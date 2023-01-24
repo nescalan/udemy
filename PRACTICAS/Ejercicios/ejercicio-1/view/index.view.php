@@ -34,7 +34,7 @@
                 </div> -->
                 <div class="farenheit">
                     <label for="farenheit">Grados Farenheit</label>
-                    <input name="farenheit" type="number" step="any" placeholder="°F" min="0" max="100" value="<?php if ($resultFarenheit != 0) {
+                    <input name="farenheit" type="number" step="any" placeholder="°F" min="-20" max="100" value="<?php if ($resultFarenheit != 0) {
                         echo $resultFarenheit;
                     } ?>">
                 </div>
