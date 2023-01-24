@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-size: 62.5%;
+}
+main {
+    width: 375px;
+    margin: 30px auto;
+    font-size: 1.3rem;
+    border-radius: 0 0 5px 5px ;
+    background-color: #ECE9D8;
+}
+main .header {
+    padding: 5px;
+    color: white;
+    border-radius: 5px 5px 0 0;
+    text-align: center;
+    background-color: #0060FA;
+}
+main form {
+    padding: 60px 20px;
+}
+main form fieldset {
+    padding: 40px 30px;
+    margin-bottom: 30px;
+}
+main form fieldset div {
+    display: flex;
+    flex-direction: column;
+}
+main form fieldset .celsius{
+    margin-bottom: 15px;
+}
+main form input{
+    height: 34px;
+    padding: 0 15px;
+}
+main form .botones {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+main form .botones button {
+    padding: 13px 26px;
+}
+
+.error {
+    background-color: #803232;
+}
