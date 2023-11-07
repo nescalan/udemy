@@ -1,7 +1,7 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "4u3p7px6";
+$password = "";
 $database = "curso_php_ajax";
 
 // Intenta conectarte a la base de datos
