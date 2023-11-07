@@ -1,21 +1,31 @@
 <?php
 $servername = "localhost";
 $username = "root";
-$password = "";
+$password = "4u3p7px6";
 $database = "curso_php_ajax";
 
 // Intenta conectarte a la base de datos
-$conn = new mysqli($servername, $username, $password, $database);
+$conexion = new mysqli($servername, $username, $password, $database);
 
-// Verifica la conexión
-if ($conn->connect_error) {
-    die("Conexión fallida: " . $conn->connect_error);
+if ($conexion->connect_errno) {
+    $respuesta = [
+        'error' => true
+    ];
+} else {
+    $conexion->set_charset("utf8");
+
+    // $respuesta = mysqli_query($conexion, "SELECT nombre FROM clientes WHERE nombre LIKE '" . $texto . "%'");
+    $respuesta = mysqli_query($conexion, "SELECT * FROM usuarios");
+
+    if (mysqli_num_rows($respuesta) > 0) {
+        $newArray = array();
+
+        while ($row = mysqli_fetch_assoc($respuesta)) {
+            $newArray[] = $row;
+        }
+
+        echo json_encode($newArray);
+    }
 }
 
-echo "Conexión exitosa a MySQL";
-
-// Resto de tu código para interactuar con la base de datos
-
-// Cierra la conexión cuando hayas terminado
-$conn->close();
 ?>
