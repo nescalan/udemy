@@ -1,6 +1,6 @@
 <?php
 
-$conexion = new mysqli('localhost', 'root', '', 'curso_php_ajax');
+$conexion = new mysqli('localhost', 'root', '4u3p7px6', 'curso_php_ajax');
 
 if ($conexion->connect_errno) {
     $respuesta = [
